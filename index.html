@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Git Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#Basic_Commands">Basic Commands</a>
+    <a class="nav-link" href="#Branching">Branching</a>
+    <a class="nav-link" href="#Merging">Merging</a>
+    <a class="nav-link" href="#Conclusion">Conclusion</a>
+    <a href="https://x.com/DayDayUp22" target="_blank" class="social-link"><i class="fab fa-twitter"></i> @DayDayUp22</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Git is a distributed version control system created by Linus Torvalds in 2005.</p>
+      <p>It allows multiple people to work on a project simultaneously without interfering with each other's work.</p>
+      <p>Git is widely used in the software industry for source code management.</p>
+      <code>git --version</code>
+      <ul>
+        <li>Distributed</li>
+        <li>Version Control</li>
+        <li>Collaboration</li>
+      </ul>
+      <p class="tip">Tip: Always check your Git version to ensure compatibility with repositories you are cloning or collaborating on.</p>
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+      <p>To start using Git, you need to install it on your computer.</p>
+      <p>After installation, configure your username and email:</p>
+      <p>Set your username:</p>
+      <code>git config --global user.name "Your Name"</code>
+      <p>Set your email:</p>
+      <code>git config --global user.email "you@example.com"</code>
+      <ul>
+        <li>Installation</li>
+        <li>Configuration</li>
+        <li>Repository Initialization</li>
+      </ul>
+      <p class="tip">Tip: Use the <code>--global</code> flag to set your username and email for all repositories. To set them for a specific repository, omit the <code>--global</code> flag.</p>
+    </section>
+
+    <section class="main-section" id="Basic_Commands">
+      <header>Basic Commands</header>
+      <p>Here are some basic Git commands to get you started:</p>
+      <p>Initialize a new Git repository:</p>
+      <code>git init</code>
+      <p>This creates a new Git repository in the current directory.</p>
+      <p>Add files to the staging area:</p>
+      <code>git add .</code>
+      <p>This stages all the changes in the current directory for the next commit. To stage a specific file, use:</p>
+      <code>git add filename.txt</code>
+      <p>Commit changes:</p>
+      <code>git commit -m "Initial commit"</code>
+      <p>This commits your staged changes with a message describing what you have done.</p>
+      <ul>
+        <li>git init</li>
+        <li>git add</li>
+        <li>git commit</li>
+      </ul>
+      <p class="tip">Tip: Use descriptive commit messages to make it easier to understand the changes you made.</p>
+    </section>
+
+    <section class="main-section" id="Branching">
+      <header>Branching</header>
+      <p>Branches in Git allow you to develop features and fix bugs in isolation.</p>
+      <p>Create a new branch:</p>
+      <code>git branch feature-branch</code>
+      <p>Switch to the new branch:</p>
+      <code>git checkout feature-branch</code>
+      <p>Or create and switch to a new branch in one command:</p>
+      <code>git checkout -b feature-branch</code>
+      <p>After creating a branch, you can work on your feature independently of the main codebase.</p>
+      <ul>
+        <li>Creating Branches</li>
+        <li>Switching Branches</li>
+        <li>Branch Management</li>
+      </ul>
+      <p class="tip">Tip: Use short and descriptive names for your branches to easily identify their purpose.</p>
+    </section>
+
+    <section class="main-section" id="Merging">
+      <header>Merging</header>
+      <p>Merging combines changes from different branches into one.</p>
+      <p>Merge the feature branch into the main branch:</p>
+      <code>git checkout main</code>
+      <code>git merge feature-branch</code>
+      <p>If there are any conflicts, Git will notify you, and you'll need to resolve them before completing the merge.</p>
+      <p>After resolving conflicts, use:</p>
+      <code>git add .</code>
+      <p>And then commit the merge:</p>
+      <code>git commit -m "Merged feature-branch into main"</code>
+      <ul>
+        <li>Merge Command</li>
+        <li>Conflict Resolution</li>
+        <li>Merge Strategies</li>
+      </ul>
+      <p class="tip">Tip: Regularly pull the latest changes from the main branch into your feature branch to minimize conflicts when merging.</p>
+    </section>
+
+    <section class="main-section" id="Conclusion">
+      <header>Conclusion</header>
+      <p>Git is a powerful tool for version control and collaboration.</p>
+      <p>Mastering Git will greatly enhance your software development workflow.</p>
+      <p>For more detailed information, refer to the official Git documentation.</p>
+      <code>git help</code>
+      <ul>
+        <li>Summary</li>
+        <li>Advanced Topics</li>
+        <li>Further Reading</li>
+      </ul>
+      <p class="tip">Tip: Use <code>git help</code> followed by any command to get detailed information about that command.</p>
+    </section>
+  </main>
+</body>
+</html>
